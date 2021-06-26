@@ -1,0 +1,123 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 3.2vw;
+    line-height: 1.4;
+    color: #232323;
+    padding: 3.5vw;
+}
+
+.logo {
+    display: inline;
+    float: left;
+    width: 22vw;
+    height: 22vw;
+    margin: 0 4vw 0 0;
+}
+
+.logo g {
+    fill: #413e3e;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: #00adef;
+    text-decoration: none;
+    transition: 1s all ease;
+}
+
+a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.catalog {
+    font-size: 2vw;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+.links .icon {
+    margin: 2vw;
+    width: 10vw;
+}
+
+.icon path {
+    transition: 1s all ease;
+}
+
+.links .icon path {
+    fill: #00adef;
+}
+
+.links a:hover .icon path {
+    fill: #111;
+}
+
+@media (min-width: 940px) {
+    body {
+        font-size: 1.25rem;
+        padding: 20px;
+    }
+
+    .catalog {
+        font-size: 1.25rem;
+    }
+
+    .logo {
+        width: 15rem;
+        height: 15rem;
+        margin: 0.5rem 1rem 0.5rem 0;
+    }
+
+    main {
+        width: 900px;
+    }
+
+    .links {
+        padding: 0;
+    }
+
+    .links .icon {
+        margin: 1.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #232323;
+        color: #ddd;
+    }
+
+    .logo g {
+        fill: #413e3e;
+        fill: #ddd;
+    }
+
+    a {
+        color: #00adef;
+    }
+
+    a:hover {
+        color: #eee;
+    }
+
+    .links .icon path {
+        fill: #00adef;
+    }
+
+    .links a:hover .icon path {
+        fill: #eee;
+    }
+
+}
